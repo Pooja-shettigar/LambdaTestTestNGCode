@@ -10,7 +10,6 @@ import org.testng.asserts.SoftAssert;
 
 import baseClass.TestBaseClass;
 import pageObjects.Home_Page;
-import utils.UIUtils;
 
 public class PageTitleValidation extends TestBaseClass{
 	
@@ -19,8 +18,6 @@ public class PageTitleValidation extends TestBaseClass{
 	public void pageTitleValidation(String url)
 	{
 		driver.get(url);
-		UIUtils utilObj = new UIUtils();
-		utilObj.waitTillPageLoad(driver);
 		
 		String expectedPageTitle="LambdaTest";
 		String actualPageTitle=driver.getTitle();

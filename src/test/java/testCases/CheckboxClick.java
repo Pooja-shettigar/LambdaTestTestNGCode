@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 import baseClass.TestBaseClass;
 import pageObjects.CheckboxDemo_Page;
 import pageObjects.Home_Page;
-import utils.UIUtils;
 
 public class CheckboxClick extends TestBaseClass{
 	
@@ -22,10 +21,8 @@ public class CheckboxClick extends TestBaseClass{
 	public void checkboxValidation(String url)
 	{
 		driver.get(url);
-		UIUtils utilObj = new UIUtils();
 		Home_Page homeObj=new Home_Page(driver);
 		CheckboxDemo_Page checkboxObj=homeObj.clickCheckboxDemoLink();
-		utilObj.waitTillPageLoad(driver);
 		System.out.printf(" Checkbox selected ?-> ",checkboxObj.isCheckboxSelected());
 		assertEquals(false, checkboxObj.isCheckboxSelected());
 		checkboxObj.clickSingleCheckbox();

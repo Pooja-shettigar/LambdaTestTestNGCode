@@ -25,8 +25,8 @@ public class CheckboxDemo_Page {
 	private WebElement checkbox;
 	
 	public boolean isCheckboxSelected() {
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		//wait.until(ExpectedConditions.presenceOfElementLocated (By.cssSelector("input#isAgeSelected")));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.presenceOfElementLocated (By.cssSelector("input#isAgeSelected")));
 		return checkbox.isSelected();
 	}
 	public void clickSingleCheckbox() {
