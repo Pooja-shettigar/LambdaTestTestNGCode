@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 3 failed,   9 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,16 +105,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.CheckboxClick" class="method navigator-link" hash-for-method="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.CheckboxClick" class="method navigator-link" hash-for-method="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.JavascriptAlertValidation" class="method navigator-link" hash-for-method="jsAlertValidation(https://www.lambdatest.com/selenium-playground/)">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-LambaTestNGTestSuite -->
@@ -134,6 +124,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.CheckboxClick" class="method navigator-link" hash-for-method="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.CheckboxClick" class="method navigator-link" hash-for-method="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambaTestNGTestSuite" title="testCases.JavascriptAlertValidation" class="method navigator-link" hash-for-method="jsAlertValidation(https://www.lambdatest.com/selenium-playground/)">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -195,46 +195,14 @@
                   </a> <!-- checkboxValidation(https://www.lambdatest.com/selenium-playground/) -->
                   <span class="method-name">checkboxValidation</span>
                   <span class="parameters">(https://www.lambdatest.com/selenium-playground/)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 7cbafcf01591e81ae59d333931856fbd, maybe session has quit already or timed out.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 252dd23217f4a85586b233719daba2fd, maybe session has quit already or timed out.
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-U9KQ8EL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [7cbafcf01591e81ae59d333931856fbd, executeScript {script=return document.readyState, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7cbafcf01591e81ae59d3339318...}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:501)
-	at utils.UIUtils.lambda$0(UIUtils.java:13)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at utils.UIUtils.waitTillPageLoad(UIUtils.java:12)
-	at testCases.CheckboxClick.checkboxValidation(CheckboxClick.java:28)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(To perform checkbox validation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">
-                  </a> <!-- checkboxValidation(https://www.lambdatest.com/selenium-playground/) -->
-                  <span class="method-name">checkboxValidation</span>
-                  <span class="parameters">(https://www.lambdatest.com/selenium-playground/)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Connection refused: connect
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-U9KQ8EL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [a6556475-d9de-45e0-8221-ebe15a8928d9, clickElement {id=6f6824f8-38a5-4b7d-863f-0384ce62c840}]
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:7603/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: a6556475-d9de-45e0-8221-ebe...}
-Element: [[RemoteWebDriver: internet explorer on WINDOWS (a6556475-d9de-45e0-8221-ebe15a8928d9)] -&gt; xpath: //a[text()=&apos;Checkbox Demo&apos;]]
-Session ID: a6556475-d9de-45e0-8221-ebe15a8928d9
+Command: [252dd23217f4a85586b233719daba2fd, clickElement {id=333222e5-2d67-4969-8135-86fa4889181d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 252dd23217f4a85586b233719da...}
+Element: [[RemoteWebDriver: chrome on WINDOWS (252dd23217f4a85586b233719daba2fd)] -&gt; xpath: //a[text()=&apos;Checkbox Demo&apos;]]
+Session ID: 252dd23217f4a85586b233719daba2fd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -258,55 +226,22 @@ Session ID: a6556475-d9de-45e0-8221-ebe15a8928d9
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-LambaTestNGTestSuite-class-failed -->
-          <div class="suite-LambaTestNGTestSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.JavascriptAlertValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="jsAlertValidation(https://www.lambdatest.com/selenium-playground/)">
-                  </a> <!-- jsAlertValidation(https://www.lambdatest.com/selenium-playground/) -->
-                  <span class="method-name">jsAlertValidation</span>
-                  <span class="parameters">(https://www.lambdatest.com/selenium-playground/)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Connection refused: connect
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-U9KQ8EL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [a6556475-d9de-45e0-8221-ebe15a8928d9, clickElement {id=e3e2cd14-0f02-4ff6-a3ad-ce05f564f902}]
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:7603/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: a6556475-d9de-45e0-8221-ebe...}
-Element: [[RemoteWebDriver: internet explorer on WINDOWS (a6556475-d9de-45e0-8221-ebe15a8928d9)] -&gt; link text: Javascript Alerts]
-Session ID: a6556475-d9de-45e0-8221-ebe15a8928d9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pageObjects.Home_Page.clickJavascriptAlertsLink(Home_Page.java:33)
-	at testCases.JavascriptAlertValidation.jsAlertValidation(JavascriptAlertValidation.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(To perform JS Alert validation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-LambaTestNGTestSuite-class-failed -->
           <div class="suite-LambaTestNGTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testCases.CheckboxClick</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">
+                  </a> <!-- checkboxValidation(https://www.lambdatest.com/selenium-playground/) -->
+                  <span class="method-name">checkboxValidation</span>
+                  <span class="parameters">(https://www.lambdatest.com/selenium-playground/)</span>
+                  <em>
+(To perform checkbox validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkboxValidation(https://www.lambdatest.com/selenium-playground/)">
@@ -383,6 +318,16 @@ Session ID: a6556475-d9de-45e0-8221-ebe15a8928d9
               <span class="class-name">testCases.JavascriptAlertValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsAlertValidation(https://www.lambdatest.com/selenium-playground/)">
+                  </a> <!-- jsAlertValidation(https://www.lambdatest.com/selenium-playground/) -->
+                  <span class="method-name">jsAlertValidation</span>
+                  <span class="parameters">(https://www.lambdatest.com/selenium-playground/)</span>
+                  <em>
+(To perform JS Alert validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="jsAlertValidation(https://www.lambdatest.com/selenium-playground/)">
@@ -514,58 +459,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkboxValidation')
-data.setCell(0, 2, 'testCases.CheckboxClick')
-data.setCell(0, 3, 6116);
+data.setCell(0, 1, 'jsAlertValidation')
+data.setCell(0, 2, 'testCases.JavascriptAlertValidation')
+data.setCell(0, 3, 6445);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'jsAlertValidation')
-data.setCell(1, 2, 'testCases.JavascriptAlertValidation')
-data.setCell(1, 3, 5707);
+data.setCell(1, 1, 'checkboxValidation')
+data.setCell(1, 2, 'testCases.CheckboxClick')
+data.setCell(1, 3, 6023);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkboxValidation')
 data.setCell(2, 2, 'testCases.CheckboxClick')
-data.setCell(2, 3, 4761);
+data.setCell(2, 3, 5538);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'jsAlertValidation')
 data.setCell(3, 2, 'testCases.JavascriptAlertValidation')
-data.setCell(3, 3, 4305);
+data.setCell(3, 3, 5404);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'jsAlertValidation')
-data.setCell(4, 2, 'testCases.JavascriptAlertValidation')
-data.setCell(4, 3, 4161);
+data.setCell(4, 1, 'checkboxValidation')
+data.setCell(4, 2, 'testCases.CheckboxClick')
+data.setCell(4, 3, 4442);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'jsAlertValidation')
 data.setCell(5, 2, 'testCases.JavascriptAlertValidation')
-data.setCell(5, 3, 4132);
+data.setCell(5, 3, 4214);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkboxValidation')
-data.setCell(6, 2, 'testCases.CheckboxClick')
-data.setCell(6, 3, 4132);
+data.setCell(6, 1, 'jsAlertValidation')
+data.setCell(6, 2, 'testCases.JavascriptAlertValidation')
+data.setCell(6, 3, 4145);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkboxValidation')
-data.setCell(7, 2, 'testCases.CheckboxClick')
-data.setCell(7, 3, 2756);
+data.setCell(7, 1, 'pageTitleValidation')
+data.setCell(7, 2, 'testCases.PageTitleValidation')
+data.setCell(7, 3, 2883);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'pageTitleValidation')
 data.setCell(8, 2, 'testCases.PageTitleValidation')
-data.setCell(8, 3, 2428);
+data.setCell(8, 3, 2566);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'pageTitleValidation')
 data.setCell(9, 2, 'testCases.PageTitleValidation')
-data.setCell(9, 3, 2346);
+data.setCell(9, 3, 2513);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'pageTitleValidation')
-data.setCell(10, 2, 'testCases.PageTitleValidation')
-data.setCell(10, 3, 2331);
+data.setCell(10, 1, 'checkboxValidation')
+data.setCell(10, 2, 'testCases.CheckboxClick')
+data.setCell(10, 3, 2241);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'pageTitleValidation')
 data.setCell(11, 2, 'testCases.PageTitleValidation')
-data.setCell(11, 3, 1857);
+data.setCell(11, 3, 1832);
 window.suiteTableData['LambaTestNGTestSuite']= { tableData: data, tableDiv: 'times-div-LambaTestNGTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-LambaTestNGTestSuite">
               </div> <!-- times-div-LambaTestNGTestSuite -->
             </div> <!-- times-div -->
@@ -591,14 +536,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome, 88.0, Windows 10)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome, 88.0, Windows 10)</span>
                 <span class="method-start">0 ms</span>
@@ -615,7 +560,7 @@ return data;
               <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">9416 ms</span>
+                <span class="method-start">8552 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -624,201 +569,193 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">9970 ms</span>
+                <span class="method-start">9246 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11766 ms</span>
+                <span class="method-start">11126 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12736 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">28769 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">32903 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
-                <span class="method-start">33396 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
-                <span class="method-start">33398 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
-                <span class="method-start">33398 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">54199 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">56630 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">72522 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">78640 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">91505 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">97216 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
-                <span class="method-start">97799 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
-                <span class="method-start">97800 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
-                <span class="method-start">97802 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">116008 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">117879 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">135337 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">140104 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">145839 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">150002 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
-                <span class="method-start">151034 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
-                <span class="method-start">151034 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
-                <span class="method-start">151052 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">158412 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">158589 ms</span>
-              </div> <!-- test-method -->
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11495 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">29511 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">162726 ms</span>
+                <span class="method-start">33726 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">34214 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">34214 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">34229 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">52347 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">162735 ms</span>
+                <span class="method-start">57889 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">71709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78156 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
-                <span class="method-start">177591 ms</span>
+                <span class="method-start">90090 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">179924 ms</span>
+                <span class="method-start">92976 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
+                <span class="method-start">93549 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
+                <span class="method-start">93550 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox, 82.0, Windows 7)</span>
+                <span class="method-start">93556 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">110803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115250 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">130930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">135078 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">149632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">151465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">152271 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">152271 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">152273 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.PageTitleValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">pageTitleValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">160227 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162743 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxClick</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkboxValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">169745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">175770 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.JavascriptAlertValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">jsAlertValidation(https://www.lambdatest.com/selenium-playground/)</span>
+                <span class="method-start">177869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">183274 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

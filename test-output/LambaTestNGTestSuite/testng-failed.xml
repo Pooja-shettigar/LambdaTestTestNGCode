@@ -16,25 +16,4 @@
       </class> <!-- testCases.CheckboxClick -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="3" parallel="classes" name="InternetExplorerTest(failed)">
-    <parameter name="browser" value="Internet Explorer"/>
-    <parameter name="version" value="11.0"/>
-    <parameter name="platform" value="Windows 10"/>
-    <classes>
-      <class name="testCases.CheckboxClick">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="checkboxValidation" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testCases.CheckboxClick -->
-      <class name="testCases.JavascriptAlertValidation">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="jsAlertValidation" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testCases.JavascriptAlertValidation -->
-    </classes>
-  </test> <!-- InternetExplorerTest(failed) -->
 </suite> <!-- Failed suite [LambaTestNGTestSuite] -->
