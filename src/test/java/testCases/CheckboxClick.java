@@ -1,15 +1,8 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
-
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import baseClass.TestBaseClass;
 import pageObjects.CheckboxDemo_Page;
 import pageObjects.Home_Page;

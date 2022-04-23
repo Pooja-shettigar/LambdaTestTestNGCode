@@ -1,10 +1,8 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import baseClass.TestBaseClass;
 import pageObjects.Home_Page;
 import pageObjects.JavascriptAlertBoxDemo_Page;

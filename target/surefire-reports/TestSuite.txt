@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 171.165 s <<< FAILURE! - in TestSuite
+jsAlertValidation(testCases.JavascriptAlertValidation)  Time elapsed: 2.626 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 6935c615db1eca30fac4cbf60bb610ef, maybe session has quit already or timed out.
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-U9KQ8EL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6935c615db1eca30fac4cbf60bb610ef, findElement {using=xpath, value=//div[contains(@id,'next')]/section[4]/div/div/div[2]/div[1]/button[text()='Click Me']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6935c615db1eca30fac4cbf60bb...}
+	at testCases.JavascriptAlertValidation.jsAlertValidation(JavascriptAlertValidation.java:19)
+

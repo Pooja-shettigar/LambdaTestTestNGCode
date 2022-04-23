@@ -1,15 +1,10 @@
 package testCases;
 
-import java.time.Duration;
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import baseClass.TestBaseClass;
-import pageObjects.Home_Page;
+
 
 public class PageTitleValidation extends TestBaseClass{
 	
