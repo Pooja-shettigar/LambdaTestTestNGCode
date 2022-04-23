@@ -21,6 +21,7 @@ public class CheckboxClick extends TestBaseClass{
 		checkboxObj.clickSingleCheckbox();
 		System.out.printf(" Checkbox selected ?-> ",checkboxObj.isCheckboxSelected());
 		assertEquals(true, checkboxObj.isCheckboxSelected());
+		driver.executeScript("lambda-status=passed");
 	}
 	
 }

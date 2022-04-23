@@ -21,6 +21,7 @@ public class JavascriptAlertValidation extends TestBaseClass{
 		System.out.println("Alert Massage -> "+alertMessage);
 		assertEquals(alertMessage, "I am an alert box!");
 		
+		driver.executeScript("lambda-status=passed");
 		
 	}
 	

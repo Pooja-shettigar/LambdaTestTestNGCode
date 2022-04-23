@@ -23,6 +23,7 @@ public class PageTitleValidation extends TestBaseClass{
 		System.out.println("PageTitle extracted -> "+actualPageTitle);
 		System.out.println("Page validation test completed");
 		
+		driver.executeScript("lambda-status=passed");
 		
 		
 	}
