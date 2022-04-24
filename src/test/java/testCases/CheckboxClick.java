@@ -16,12 +16,17 @@ public class CheckboxClick extends TestBaseClass{
 		driver.get(url);
 		Home_Page homeObj=new Home_Page(driver);
 		CheckboxDemo_Page checkboxObj=homeObj.clickCheckboxDemoLink();
-		System.out.printf(" Checkbox selected ?-> ",checkboxObj.isCheckboxSelected());
 		assertEquals(false, checkboxObj.isCheckboxSelected());
 		checkboxObj.clickSingleCheckbox();
-		System.out.printf(" Checkbox selected ?-> ",checkboxObj.isCheckboxSelected());
-		assertEquals(true, checkboxObj.isCheckboxSelected());
-		driver.executeScript("lambda-status=passed");
+		try{
+			assertEquals(true, checkboxObj.isCheckboxSelected());
+			System.out.println("Checkbox selected");
+			driver.executeScript("lambda-status=passed");
+		}catch(AssertionError e){
+			System.out.println("Checkbox not selected");
+			driver.executeScript("lambda-status=failed");  
+		}
+		
 	}
 	
 }
